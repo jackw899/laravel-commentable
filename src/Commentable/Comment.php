@@ -38,6 +38,6 @@ class Comment extends Node
      */
     public function user()
     {
-        return $this->belongsTo(Config::get('auth.model'));
+        return $this->belongsTo(Config::get('auth.providers.users.model'));
     }
 }
